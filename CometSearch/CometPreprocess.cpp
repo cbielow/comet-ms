@@ -1069,7 +1069,7 @@ bool CometPreprocess::CheckExistOutFile(int iCharge,
       else
          (*pStr)++;
 
-      sprintf(szOutputFileName, "%s/%s.%.5d.%.5d.%d.out",
+      sprintf(szOutputFileName, "%.100s/%.100s.%.5d.%.5d.%.20d.out",
             g_staticParams.inputFile.szBaseName,
             pStr,
             iScanNum,

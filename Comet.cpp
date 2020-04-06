@@ -1089,10 +1089,10 @@ void LoadParameters(char *pszParamsFile,
             }
             else if (!strcmp(szParamName, "minimum_intensity"))
             {
-               sscanf(szParamVal, "%d", &iIntParam);
+               sscanf(szParamVal, "%lf", &dDoubleParam);
                szParamStringVal[0] = '\0';
-               sprintf(szParamStringVal, "%d", iIntParam);
-               pSearchMgr->SetParam("minimum_intensity", szParamStringVal, iIntParam);
+               sprintf(szParamStringVal, "%lf", dDoubleParam);
+               pSearchMgr->SetParam("minimum_intensity", szParamStringVal, dDoubleParam);
             }
             else if (!strcmp(szParamName, "decoy_search"))
             {
